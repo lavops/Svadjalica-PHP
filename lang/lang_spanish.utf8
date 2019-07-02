@@ -1,0 +1,121 @@
+<?php
+
+
+/* Español */
+
+$lang=array();
+
+$lang['on']            = 'Encendido';
+$lang['off']           = 'Apagado';
+$lang['cancel']        = 'Cancelar';
+$lang['close']         = 'Cerrar';
+$lang['send']          = 'Enviar';
+$lang['preview']       = 'Vista previa';
+$lang['del']           = 'Eliminar';
+$lang['guest']         = 'Invitado';
+$lang['username']      = 'Usuario';
+$lang['password']      = 'Contraseña';
+$lang['retype']        = 'Repetir contraseña';
+$lang['old_pass']      = 'Contraseña actual';
+$lang['new_pass']      = 'Nueva contraseña';
+$lang['fpr_question']  = 'Pregunta de recuperación de contraseña';
+$lang['fpr_answer']    = 'Respuesta de recuperación de contraseña';
+$lang['reset_pass']    = 'Reestablecer contraseña';
+$lang['email']         = 'E-mail';
+$lang['login']         = 'Inicio sesión';
+$lang['exitt']         = 'Cerrar sesión';
+$lang['exit2']         = 'Salida';
+$lang['register']      = 'Registrar';
+$lang['submit']        = 'Enviar';
+$lang['acp']           = 'Admin CP';
+$lang['account_ok']    = 'Su cuenta se ha creado con éxito.';
+$lang['account_wait']  = 'Está todavía en cuarentena, se requiere aprobación del administrador.';
+$lang['forgot_pass']   = 'Contraseña olvidada';
+$lang['online']        = 'En línea';
+$lang['message']       = 'Mensaje';
+$lang['kick']          = 'Echar';
+$lang['kicked_out']    = 'Acaba de ser echado fuera!';
+$lang['multi_conn']    = 'Desconectado! No se pueden ejecutar multiples sesiones!';
+$lang['un_mute']       = 'Deshabilitar sonido/Habilitar sonido';
+$lang['ban']           = 'Bloquear';
+$lang['info_ban']      = 'Ha sido bloqueado!';
+$lang['guest_error']   = 'No puede utilizar este nombre de invitado desde una IP diferente.';
+$lang['no_upmatch']    = 'Usuario y contraseña no coinciden.';
+$lang['wrong_usr_em']  = 'Usuario o e-mail existente.';
+$lang['wrong_usr_ps']  = 'Usuario o contraseña incorrectos.';
+$lang['wrong_pass']    = 'Contraseña incorrecta';
+$lang['wrong_email']   = 'E-mail incorrecto';
+$lang['wrong_recmail'] = 'Este e-mail no existe.';
+$lang['wrong_promail'] = 'Este e-mail ya esta registrado.';
+$lang['wrong_quas']    = 'La pregunta o la respuesta de recuperación es demasiado corta.';
+$lang['pass_short']    = 'La contraseña es demasiado corta.';
+$lang['wrong_recansw'] = 'La respuesta de recuperación es incorrecta.';
+$lang['pass_newpass']  = 'Contraseña reestablecida con éxito. Su nueva contraseña es: ';
+$lang['pass_required'] = 'Cuenta protegida con contraseña. Iniciar sesión con contraseña.';
+$lang['error_attmpts'] = 'Demasiados intentos fallidos. Por favor, espere una hora.';
+$lang['error_reguser'] = 'No tiene permisos para realizar la operación solicitada.';
+$lang['error_noperms'] = 'No tiene permisos para cargar esta página.';
+$lang['please_login']  = 'Necesita iniciar sesión para ver esta página.';
+$lang['settings']      = 'Configuración';
+$lang['profile']       = 'Perfil';
+$lang['emoji']         = 'Emoji';
+$lang['avatar']        = 'Avatar';
+$lang['motto']         = 'Motto';
+$lang['fmedia']        = 'Archivos y Media';
+$lang['select']        = 'Archivo...';
+$lang['location']      = 'Ubicación';
+$lang['rolldice']      = 'Tirar el dado';
+$lang['confirm']       = 'Por favor, confirme...';
+$lang['upload_ms']     = 'Avatar y motto están en el caché. Si se cambian, aparecerán en 20 minutos...';
+$lang['status1']       = 'Disponible';
+$lang['status2']       = 'Fuera';
+$lang['status3']       = 'Ocupado';
+$lang['status4']       = 'No disponible';
+$lang['status5']       = 'No molestar';
+$lang['status0']       = 'Invisible';
+$lang['rooms']         = 'Habitaciones';
+$lang['bgsnd']         = 'Notificaciónes de sonido para mensajes recibidos en segundo plano.';
+$lang['mfiles']        = 'Archivos';
+$lang['mdoodles']      = 'Doodles';
+$lang['doodle']        = 'Doodle';
+$lang['desc']          = 'Descripción';
+$lang['history']       = 'Previamente...';
+$lang['src_tenor']     = 'Buscar Tenor';
+$lang['src_smoji']     = 'Buscar Stimoji';
+$lang['n_rec']         = 'Haga clic en el botón de nuevo para iniciar la grabación...';
+$lang['upload']        = 'Subir';
+$lang['amsg']          = 'Mensaje de voz';
+$lang['vmsg']          = 'Mensaje de video';
+$lang['amsge']         = 'Habilitar mensajes de voz';
+$lang['vmsge']         = 'Habilitar mensajes de video';
+$lang['pcancel']       = 'Procesando... Haga clic para abortar!';
+$lang['fb_ok']         = 'OKAY';
+$lang['fb_uname']      = 'Escolha nome';
+$lang['fb_ushort']     = 'Nome muito curto!';
+$lang['fb_uinuse']     = 'Nome já em uso!';
+$lang['fbconnect']     = 'Continuar con Facebook';
+
+// ---------------------------------
+
+$js_lang=array();
+
+$js_lang['system']            = 'Sistema';
+$js_lang['error_occurred']    = 'Se ha producido un error. ¿Volver a conectar?';
+$js_lang['connection_closed'] = 'Se ha terminado la conexión. ¿Volver a conectar?';
+$js_lang['connected']         = 'Conectado';
+$js_lang['disconnected']      = 'Desconectado';
+$js_lang['no_spam']           = 'No spam, por favor!';
+$js_lang['message']           = 'Mensaje';
+$js_lang['file']              = 'Archivo';
+$js_lang['audio']             = 'Audio';
+$js_lang['vomsg']             = 'Grab.';
+$js_lang['video']             = 'Video';
+$js_lang['image']             = 'Imagen';
+$js_lang['group']             = 'Grupo';
+$js_lang['pmmsg']             = 'Tiene un mensaje privado de';
+$js_lang['stlth']             = 'No mensajes privados en modo stealth...';
+$js_lang['fnopm']             = 'Este usuario no acepta mensajes privados.';
+$js_lang['pwait']             = 'Espera un momento...';
+$js_lang['nomsg']             = 'Sin mensajes previos...';
+
+?>

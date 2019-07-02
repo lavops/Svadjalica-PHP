@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html><head>
+<link rel="icon" href="plavaO.png">
+<title>Svadjalica</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.5, user-scalable=yes" />
+
+<script>
+
+selfurl=self.location.href.toString();
+
+theuri='blabax.php';
+
+function change_mode(x){
+
+a=document.getElementById('blabdiv');
+b=document.getElementById('maximiz');
+
+rx=((window.innerWidth-400))
+ry=((window.innerHeight-550)/2)
+
+if(typeof x != 'number'){x=0;}
+if(window.innerWidth<800 || window.innerHeight<600){x=1; b.style.display='block';} else{b.style.display='none';}
+switch(x){
+case 2: a.style.position='fixed';a.style.top=ry+'px'; a.style.bottom=ry+'px'; a.style.left='20%'; a.style.right='20%'; break;
+case 3: a.style.position='fixed';a.style.top=ry+'px'; a.style.bottom='0';      a.style.left='0';   a.style.right=rx+'px'; break;
+default:a.style.position='fixed';a.style.top='20px'; a.style.bottom='0';      a.style.left='0';   a.style.right='0'; break;
+}}
+
+
+</script>
+
+<style>
+body{margin:0;padding:0;background-color:#333333;background-image: url('svadjalica.png');background-size:400px;}
+#buttons{position:fixed;top:0;left:0;right:0;height:20px;padding:1px;text-align:center;background-color:#444;white-space:nowrap;color:#fff;font:small-caps 14px sans-serif;}
+#maximiz{position:fixed;top:0;left:0;right:0;height:20px;padding:1px;text-align:center;background-color:#444;white-space:nowrap;color:#fff;font:small-caps 14px sans-serif;display:none;}
+#blabdiv{position:fixed;top:60px;bottom:120px;left:20%;right:20%;border:10px solid #444;box-shadow:0 0 10px #333}
+#blabcha{width:100%;height:100%;border-width:0;background-color:#000}
+input{color:#fff;background-color:transparent;padding:0;margin-left:20px;border-width:0;font:small-caps 14px sans-serif;cursor:pointer;}
+</style>
+
+</head><body>
+
+<div style="color:#eee;padding:5px;position:fixed;bottom:5px;width:100%;text-align:center">
+<small>Powered by 
+<a style="color:#FEC400" href="https://svadjalica.rs">C L A Y</a>
+</small></div>
+
+<div id="blabdiv"><iframe src="blabax.php" id="blabcha"></iframe></div>
+
+<div id="buttons">
+<input type="button" value="Ceo ekran" onclick="change_mode(1)" />
+<input type="button" value="Centar" onclick="change_mode(2)" />
+<input type="button" value="Ugao" onclick="change_mode(3)" />
+<input type="button" value="Mobilni Telefoni PMF" onclick="location.href = 'http://ep-2019-housestark.azurewebsites.net';" />
+</div>
+
+<div id="maximiz">Otvorite skroz vas prozor da bi ste mogli da menjate modove</div>
+
+<script>
+
+if(typeof window.orientation !== 'undefined' && "ontouchstart" in document.documentElement){window.location.href=theuri;}
+else{document.getElementById('blabcha').src=theuri}
+
+window.onresize=change_mode
+function pfoc(){blabcha.focus();}  document.onclick=pfoc;
+change_mode(1);
+</script>
+
+</body></html>

@@ -1,0 +1,37 @@
+<?php
+
+$options=' ENGINE=MYISAM CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci';
+if($dbss['cset']=='utf8'){$options=' ENGINE=MYISAM CHARACTER SET utf8 COLLATE utf8_general_ci';}
+
+if($int_version<18.12){
+neutral_query("INSERT INTO ".$dbss['prfx']."_settings VALUES('vvm_on','1')");
+neutral_query("INSERT INTO ".$dbss['prfx']."_settings VALUES('vvm_sz','1000000')");
+neutral_query("INSERT INTO ".$dbss['prfx']."_settings VALUES('vvm_la','30')");
+neutral_query("INSERT INTO ".$dbss['prfx']."_settings VALUES('vvm_lv','10')");
+neutral_query("INSERT INTO ".$dbss['prfx']."_settings VALUES('vvm_ba','1')");
+neutral_query("INSERT INTO ".$dbss['prfx']."_settings VALUES('vvm_bv','1')");
+neutral_query("INSERT INTO ".$dbss['prfx']."_settings VALUES('vvm_rs','1')");
+neutral_query("INSERT INTO ".$dbss['prfx']."_settings VALUES('vvm_us','5')");
+}
+
+if($int_version<19.01){
+$new_template=str_replace('.x_accent_bg{color:#[4]','.x_accent_bg{color:#[0]',$settings['style_template']);
+neutral_query('UPDATE '.$dbss['prfx']."_settings SET value='$new_template' WHERE id='style_template'");
+}
+
+if($int_version<19.02){
+neutral_query('CREATE TABLE '.$dbss['prfx'].'_social(id varchar(128) NOT NULL,userid integer NOT NULL,social char(2) NOT NULL,sA varchar(256) NOT NULL,sB varchar(256) NOT NULL,sC varchar(512) NOT NULL,sD varchar(512) NOT NULL)'.$options);
+neutral_query("INSERT INTO ".$dbss['prfx']."_settings VALUES('group_f','1')");
+neutral_query("INSERT INTO ".$dbss['prfx']."_settings VALUES('fb_appid','')");
+neutral_query("INSERT INTO ".$dbss['prfx']."_settings VALUES('fb_r_url','')");
+neutral_query("INSERT INTO ".$dbss['prfx']."_settings VALUES('fb_t_frm','index.php')");
+neutral_query("INSERT INTO ".$dbss['prfx']."_settings VALUES('rmb_unsent','1')");
+}
+
+// version update
+$forcereload=substr(md5($timestamp),0,9);
+neutral_query('UPDATE '.$dbss['prfx']."_settings SET value='$forcereload' WHERE id='forcereload'");
+neutral_query('UPDATE '.$dbss['prfx']."_settings SET value='$version' WHERE id='version'");
+redirect('admin.php?ok='.$timestamp);
+
+?>

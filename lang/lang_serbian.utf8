@@ -1,0 +1,121 @@
+<?php
+
+
+/* Deutsch */
+
+$lang=array();
+
+$lang['on']            = 'Ukljuceno';
+$lang['off']           = 'Iskljuceno';
+$lang['cancel']        = 'Otkazi';
+$lang['close']         = 'Zatvori';
+$lang['send']          = 'Posalji';
+$lang['preview']       = 'Pregled';
+$lang['del']           = 'Obrisi';
+$lang['guest']         = 'Gost';
+$lang['username']      = 'Korisnicko ime';
+$lang['password']      = 'Lozinka';
+$lang['retype']        = 'Ponovo unesite lozinku';
+$lang['old_pass']      = 'Trenutna lozinka';
+$lang['new_pass']      = 'Nova lozinka';
+$lang['fpr_question']  = 'Pitanje za vracanje lozinke';
+$lang['fpr_answer']    = 'Odgovor za povratak lozinke';
+$lang['reset_pass']    = 'Resetuj lozinku';
+$lang['email']         = 'E-Mail';
+$lang['login']         = 'Prijava';
+$lang['exitt']         = 'Odjava';
+$lang['exit2']         = 'Izlaz';
+$lang['register']      = 'Registracija';
+$lang['submit']        = 'Posalji';
+$lang['acp']           = 'Admin CP';
+$lang['account_ok']    = 'Vas nalog je uspesno kreiran';
+$lang['account_wait']  = 'Jos uvek ste u fazi cekanja. Potrebno je odobrenje od strane administratora.';
+$lang['forgot_pass']   = 'Zaboravljena lozinka';
+$lang['online']        = 'Online';
+$lang['message']       = 'Poruka';
+$lang['kick']          = 'Izbaci';
+$lang['kicked_out']    = 'Volimo te, vidimo se sutra!';
+$lang['multi_conn']    = 'Iskljuceno! Ne mozete pokrenuti vise instanci!';
+$lang['un_mute']       = 'Ukljuci zvuk/Iskljuci zvuk';
+$lang['ban']           = 'Banuj';
+$lang['info_ban']      = 'Volimo te, vidimo se sutra!';
+$lang['guest_error']   = 'Ne mozete koristiti ovo ime gosta sa druge IP adrese!';
+$lang['no_upmatch']    = 'Korisnicko ime i lozinka se ne podudaraju!';
+$lang['wrong_usr_em']  = 'Korisnicko ime ili e-mail vec postoji!';
+$lang['wrong_usr_ps']  = 'Neispravno ime ili lozinka!';
+$lang['wrong_pass']    = 'Pogresna lozinka!';
+$lang['wrong_email']   = 'Neispravna e-mail adresa!';
+$lang['wrong_recmail'] = 'E-mail adresa ne postoji!';
+$lang['wrong_promail'] = 'Ova e-mail adresa je u upotrebi!';
+$lang['wrong_quas']    = 'Pitanje ili odgovor za oporavak je prekratak';
+$lang['pass_short']    = 'Lozinka je prekratka!';
+$lang['wrong_recansw'] = 'Odgovor za oporavak se ne podudara!';
+$lang['pass_newpass']  = 'Lozinka je uspesno ponistena. Vas nova lozinka je: ';
+$lang['pass_required'] = 'Nalog ima lozinku. Prijavite se lozinkom.';
+$lang['error_attmpts'] = 'Previse pokusaja. Sacekajte jedan sat.';
+$lang['error_reguser'] = 'Nije vam dozvoljeno da izvrsite zahtevanu operaciju!';
+$lang['error_noperms'] = 'Nije vam dozvoljeno da ucitate ovu stranicu!';
+$lang['please_login']  = 'Morate se prijaviti da biste pogledali ovu stranicu!';
+$lang['settings']      = 'Podesavanja';
+$lang['profile']       = 'Profil';
+$lang['emoji']         = 'Emojis';
+$lang['avatar']        = 'Avatar';
+$lang['motto']         = 'Zivotni moto';
+$lang['fmedia']        = 'Datoteke i Mediji';
+$lang['select']        = 'Izaberi datoteku';
+$lang['location']      = 'Lokacija';
+$lang['rolldice']      = 'Baci kocku';
+$lang['confirm']       = 'Molimo potvrdite...';
+$lang['upload_ms']     = 'Avatar i zivotni moto su kesirani i ako se promene, pojavice se za 20 minuta...';
+$lang['status1']       = 'Dostupno';
+$lang['status2']       = 'Odsutan';
+$lang['status3']       = 'Zauzet';
+$lang['status4']       = 'Nije dostupan';
+$lang['status5']       = 'Ne ometaj';
+$lang['status0']       = 'Nevidljiv';
+$lang['rooms']         = 'Sobe';
+$lang['bgsnd']         = 'Zvucna obavestenja za poruke primljene u pozadini.';
+$lang['mfiles']        = 'Datoteke';
+$lang['mdoodles']      = 'Doodles';
+$lang['doodle']        = 'Doodle';
+$lang['desc']          = 'Opis';
+$lang['history']       = 'Prethodne poruke...';
+$lang['src_tenor']     = 'Prerazi Tenor';
+$lang['src_smoji']     = 'Pretrazi Stimoji';
+$lang['n_rec']         = 'Kliknite na dugme ponovo da biste zapoceli snimanje...';
+$lang['upload']        = 'Upload';
+$lang['amsg']          = 'Glasovna poruka';
+$lang['vmsg']          = 'Video poruka';
+$lang['amsge']         = 'Omoguci glasovne poruke';
+$lang['vmsge']         = 'Omoguci video poruke';
+$lang['pcancel']       = 'Obrada... Kliknite da biste prekinuli!';
+$lang['fb_ok']         = 'OKAY';
+$lang['fb_uname']      = 'Izaberi ime';
+$lang['fb_ushort']     = 'Korisnicko ime prekratko!';
+$lang['fb_uinuse']     = 'Korisnicko ime je vec u upotrebi!';
+$lang['fbconnect']     = 'Nastavi sa Facebook-om';
+
+// ---------------------------------
+
+$js_lang=array();
+
+$js_lang['system']            = 'Sistem';
+$js_lang['error_occurred']    = 'Greska! Povezi se ponovo?';
+$js_lang['connection_closed'] = 'Izgubila se veza! Povezi se ponovo?';
+$js_lang['connected']         = 'je usao';
+$js_lang['disconnected']      = 'je izasao';
+$js_lang['no_spam']           = 'Bez spama, molim.';
+$js_lang['message']           = 'Poruka';
+$js_lang['file']              = 'Datoteka';
+$js_lang['audio']             = 'Audio';
+$js_lang['vomsg']             = 'Snimaj';
+$js_lang['video']             = 'Video';
+$js_lang['image']             = 'Slika';
+$js_lang['group']             = 'Grupa';
+$js_lang['pmmsg']             = 'Imate privatnu poruku od';
+$js_lang['stlth']             = 'Nema privatnih poruka u nevidljivom rezimu...';
+$js_lang['fnopm']             = 'Ovaj korisnik ne prihvata privatne poruke!';
+$js_lang['pwait']             = 'Molimo sacekajte...';
+$js_lang['nomsg']             = 'Nema prethodnih poruka...';
+
+?>
